@@ -1,19 +1,262 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-  {% include head.html %}
+    <title>Devise</title>
 
-    <body>
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+	
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+	<link href="css/custom.css" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800,300' rel='stylesheet' type='text/css'>
+	
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="bootstrap/js/html5shiv.js"></script>
+      <script src="bootstrap/js/respond.min.js"></script>
+    <![endif]-->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>	
+	
+	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+	<script type="text/javascript" src="js/examples.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				
+				anchors: ['home', 'about', 'howToJoin', 'mechanics', 'sponsors'],
+				menu: '#menu',
+				scrollingSpeed: 700
+			});
+			
+		});
+	</script>
+  </head>
 
-    {% include header.html %}
-
-    <div class="page-content">
-      <div class="wrap">
-      {{ content }}
+  <body>
+	<div class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+      	<div class="row">
+		    <div class="col-md-3 col-sm-2">
+		        <div class="navbar-header logo-wrap">
+		          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+		            <span class="icon-bar"></span>
+		            <span class="icon-bar"></span>
+		            <span class="icon-bar"></span>
+		          </button>
+		          <a class="navbar-brand" href="index.html">LOGO HERE</a>
+		        </div>
+		    </div>
+			<div class="col-md-9 col-sm-10">
+        		<div class="row">
+		        	<div class="col-md-12 navbar-top">
+				        <div class="navbar-collapse collapse navbar-right navbar-right-wrap">
+				          <ul class="nav navbar-nav nav-top" id="menu">
+				            <li data-menuanchor="home" class="active"><a href="#home">Home</a></li>
+							<li data-menuanchor="about" ><a href="#about">About</a></li>
+							<li data-menuanchor="howToJoin" ><a href="#howToJoin">How to Join</a></li>
+							<li data-menuanchor="mechanics" ><a href="#mechanics">Mechanics</a></li>
+							<li data-menuanchor="sponsors" ><a href="#sponsors">Sponsors</a></li>
+				          </ul>
+				        </div><!--/.nav-collapse -->
+				    </div>
+				</div>
+		    </div>
+		</div>
       </div>
-    </div>
+    </div>	
+	<div class="spacer"></div>
+	<div id="fullpage">
+	<div class="section" id="section0">
+		<div class="banner-home">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 wrapL">
+						<img src="img/devcon-logo.png" class="img-responsive" />
+						<h1>Devise</h1>
+						<h5>Devcon Devise is a National Competition that aims to challenge students in solving real world problems with mobile applications. </h5>
+						
+						<h5>The theme is Public Safety and Disaster Preparedness. </h5>
+						<hr>
+						<img src="img/icon1.png">&nbsp;<img src="img/icon2.png">&nbsp;
+						<img src="img/icon3.png">&nbsp;<img src="img/icon4.png">&nbsp;
+						<img src="img/icon5.png">&nbsp;<img src="img/icon6.png">&nbsp;
+						<img src="img/icon7.png">&nbsp;<img src="img/icon8.png">&nbsp;
+					</div>
+					<div class="col-md-6 wrapR text-center">
+						<img src="img/devise-logo.png" class="img-responsive dlogo"/>
+						<h4>Join the Cause</h4>
+						<h4>Make a difference</h4>
+						<button type="submit" class="btn btnW">Learn More.</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div><!-- /banner-home -->
+	<div class="section" id="section1">
+		<div class="header-wrap">
+				<h1>About</h1>
+			</div>
+		<div class="banner">
+			<div class="container">
+				<div class="row text-center">
+					<div class="col-md-4">
+						<img src="img/about-img1.png" class="img-responsive" />
+						<hr>
+						<p><span>Devcon Devise</span> is a National Competition that aims to challenge students in solving real world problems with mobile applications. </p>
+					</div>
+					<div class="col-md-4">
+						<img src="img/about-img2.png" class="img-responsive" />
+						<hr>
+						<p><span>Theme:</span></p>
+						<p>Public Safety and Disaster Preparedness</p>
+					</div>
+					<div class="col-md-4">
+						<img src="img/about-img3.png" class="img-responsive" />
+						<hr>
+						<p><span>Start of Registration</span></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div><!-- /banner-home -->
+	<div class="section" id="section2">
+		<div class="header-wrap">
+				<h1>How to Join</h1>
+			</div>
+		<div class="banner">
+			<div class="container">
+				<div class="row text-center">
+					<div class="col-md-4">
+						<img src="img/how-img1.png" class="img-responsive" />
+						<hr>
+						<p><span>Registration</span></p>
+						<ol>
+							<li>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tem por incid</li>
+							<li>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tem por incid</li>
+							<li>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tem por incid</li>
+							<li>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tem por incid</li>
+						</ol>
+					</div>
+					<div class="col-md-4">
+						<img src="img/how-img2.png" class="img-responsive" />
+						<hr>
+						<p><span>Platform and Tools</span></p>
+						<ol>
+							<li>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tem por incid</li>
+							<li>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tem por incid</li>
+							<li>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tem por incid</li>
+							<li>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tem por incid</li>
+						</ol>
+					</div>
+					<div class="col-md-4">
+						<img src="img/how-img3.png" class="img-responsive" />
+						<hr>
+						<p><span>3-Minute Video</span></p>
+						<ol>
+							<li>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tem por incid</li>
+							<li>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tem por incid</li>
+							<li>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tem por incid</li>
+							<li>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tem por incid</li>
+						</ol>
+					</div>
+				</div>
+			</div>
+			<hr>			
+		</div>
+	</div><!-- /banner-home -->
+	<div class="section" id="section3">
+		<div class="header-wrap">
+				<h1>Mechanics</h1>
+			</div>
+		<div class="banner">
+			<div class="container">
+				<div class="row text-center">
+					<div class="col-md-4">
+						<img src="img/mech-img1.png" class="img-responsive" />
+						<hr>
+						<p><span>Judging</span></p>
+						<ol>
+							<li>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tem por incid</li>
+							<li>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tem por incid</li>
+							<li>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tem por incid</li>
+							<li>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tem por incid</li>
+						</ol>
+					</div>
+					<div class="col-md-4">
+						<img src="img/mech-img2.png" class="img-responsive" />
+						<hr>
+						<p><span>Prizes</span></p>
+						<p>Champion-  100,000</p>
+						<p>1st place-	P50,000</p>
+						<p>2nd place-	P30,000</p>
+						<p>3rd Place-	P10,000</p>
+						
+					</div>
+					<div class="col-md-4">
+						<img src="img/mech-img3.png" class="img-responsive" />
+						<hr>
+						<p><span>Others</span></p>
+						<p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tem por incid</p>
+						<p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tem por incid</p>
+					</div>
+				</div>
+			</div>
+			<hr>
+		</div>
+	</div><!-- /banner-home -->
+	<div class="section" id="section3">
+		<div class="header-wrap">
+				<h1>Sponsors</h1>
+			</div>
+		<div class="banner">
+			<div class="container">
+				<div class="row text-center">
+					<div class="col-md-4">
+						<img src="img/spon-img1.png" class="img-responsive" /><hr>
+					</div>
+					<div class="col-md-4">
+						<img src="img/spon-img2.png" class="img-responsive" /><hr>
+					</div>
+					<div class="col-md-4">
+						<img src="img/spon-img3.png" class="img-responsive" /><hr>			
+					</div>
+				</div>
+			</div>
+			<hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr>
+			<footer>
+				<div class="footer-wrap">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-12 text-center">
+								<p>DevCon Devise 2014</p>
+								<ul>
+									<li class="active"><a href="index.html">Home</a> | </li>
+									<li><a href="about.html">About</a> | </li>
+									<li><a href="how-to-join.html">How to Join</a> | </li>
+									<li><a href="mechanics.html">Mechanics</a> | </li>
+									<li><a href="sponsors.html">Sponsors</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div><!-- /footer-wrap -->	
+			</footer>
+		</div>
+	</div><!-- /banner-home -->
+	</div>
+	
 
-    {% include footer.html %}
-
-    </body>
+    <!--<script src="bootstrap/js/jquery.js"></script>-->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+	<script src="bootstrap/js/respond.min.js"></script>
+	<script src="bootstrap/js/css3-mediaqueries.js"></script>
+  </body>
 </html>
