@@ -35,23 +35,24 @@ filter:url("../img/bg-circle.png"), progid:DXImageTransform.Microsoft.gradient( 
 background-repeat:no-repeat; background-position:center right;}
 .wrapL{background:#51bf00; padding:100px 150px 275px 150px; color:#ffffff;}
 .wrapL h1{color:#161515; font-size:65px; margin-top:0px; font-weight:400}
-.wrapR img.dlogo{display: inline; margin-bottom:20px;}
-.wrapR h4{margin:8px 0px 0px 127px; font-weight:300; text-align: center;}
+.wrapR img.dlogo{display: inline; margin-bottom:20px; position: relative; left: 100px; }
+.wrapR h4{margin:8px 0px 0px 127px; font-weight:300; text-align: center; position: relative; left: 40px;}
 .wrapR{padding-left: 0px;}
 /* .wrapR {padding-left: 12px;} */
 a.btnW{background:#cbcbca; -moz-box-shadow:2px 2px 4px 1px #aaaaa9;  -webkit-box-shadow: 2px 2px 4px 1px #aaaaa9;  box-shadow:2px 2px 4px 1px #aaaaa9;
-color: #2C2E2F; padding: 10px 20px; border-radius:10px; -moz-border-radius:10px; -webkit-border-radius:10px;}
+color: #2C2E2F; padding: 10px 20px; border-radius:10px; -moz-border-radius:10px; -webkit-border-radius:10px; position: relative; left: 100px;}
 /*----------------------------------about----------------------*/
 .header-wrap{background:#51bf00; padding:10px 0px 15px;}
 .header-wrap h1{text-align:center; color:#ffffff; font-weight:600;}
-.banner{background:#ffffff; padding:100px 0px 50px 0px;}
+.banner{background:#ffffff; padding:100px 0px 0px 0px;}
 .banner img{display:inline;}
 .banner span{font-weight:700; font-size:16px;}
 /*----------------------------------htj----------------------*/
 
 /*----------------------------------footer----------------------*/
-.footer-wrap p, .footer-wrap a{color: #c4c0c0; font-size: 14px; font-weight: 300}
-.footer-wrap{padding: 20px 0; background:#51bf00;}
-.footer-wrap ul{color:#c4c0c0; font-weight:300; width:410px; margin:0 auto;}
+footer{position: relative; bottom: 0px}
+.footer-wrap p, .footer-wrap a{color: #ffffff; font-size: 14px; font-weight: 300}
+.footer-wrap{padding: 20px 0; background:#2C2E2F;}
+.footer-wrap ul{color:#ffffff; font-weight:300; width:490px; margin:0 auto;}
 .footer-wrap ul li{list-style:none; float:left; margin-right:10px;}
-.footer-wrap ul li.active a{color:#444444;}
+.footer-wrap ul li.active a{color:#ffffff; text-decoration: underline;}
