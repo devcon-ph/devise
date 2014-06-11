@@ -69,8 +69,8 @@
 	.wrapR{background:#ffffff; margin-top:10px;}
 	.wrapL{background:transparent;}
 	.navbar-default .navbar-toggle{display: none;}
-	.wrapR h4, a.btnW{position: static; text-align: center;}
 	.wrapR p a.btnW{margin-bottom: 20px;}
+	.navbar-nav{display: none;}
 }
 @media (min-width: 768px) and (max-width: 1199px){
 	.wrapR img.dlogo{position:static; display:inline; }
@@ -81,7 +81,4 @@
 	
 }
 @media (min-width: 992px) and (max-width: 1400px){
-	.wrapR img.dlogo{left: 50px}
-	.wrapR h4{position: static; text-align: center; margin-left:10px }
-	a.btnW{position: static; text-align: center;}
 }
