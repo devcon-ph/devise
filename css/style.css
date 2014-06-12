@@ -46,7 +46,9 @@ color: #ffffff; padding: 10px 20px; border-radius:10px; -moz-border-radius:10px;
 .header-wrap h1{text-align:center; color:#ffffff; font-weight:600;}
 .banner{background:#ffffff; padding:100px 0px 0px 0px;}
 .banner img{display:inline; margin-bottom: 10px; -moz-filter: drop-shadow(5px 5px 5px #222); -webkit-filter: drop-shadow(5px 5px 5px #222); filter: drop-shadow(5px 5px 5px #222);}
-.banner span{font-weight:700; font-size:16px;}
+.banner h5, .banner span{font-weight:700; font-size:16px; text-align: center;}
+.banner p{text-align: left;}
+p.pwrap span{font-size: 13px;}
 /*----------------------------------htj----------------------*/
 
 /*----------------------------------footer----------------------*/
