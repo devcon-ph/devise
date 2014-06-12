@@ -49,7 +49,10 @@ color: #ffffff; padding: 10px 20px; border-radius:10px; -moz-border-radius:10px;
 .banner h5, .banner span{font-weight:700; font-size:16px; text-align: center;}
 .banner p{text-align: left;}
 p.pwrap span{font-size: 13px;}
-/*----------------------------------htj----------------------*/
+/*----------------------------------mech----------------------*/
+.mech-wrap p{font-size: 12px;}
+.mech-wrap .mech-p p{text-align: center;}
+table.mech-tab tr td{text-align: left; font-size: 12px;}
 
 /*----------------------------------footer----------------------*/
 footer{position: relative; bottom: 0px}
