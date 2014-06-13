@@ -45,23 +45,24 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>	
 	
-	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
-	<script type="text/javascript" src="js/examples.js"></script>
 	<script type="text/javascript">
-    $(document).ready(function() {
-        if (window.innerWidth > 991) {
-            $('#fullpage').fullpage({
-                anchors: ['home', 'about', 'howToJoin', 'mechanics', 'sponsors'],
-                menu: '#menu',
-                scrollingSpeed: 700
-            });
-        }
-    });
+    $('body').scrollspy({ target: '#navbar' })
+    $('[data-spy="scroll"]').each(function () {
+		  var $spy = $(this).scrollspy('refresh')
+		})
   </script>
+  <script type="text/javascript">
+	$(document).ready(function(){
+	    $("#myNavbar").on('activate.bs.scrollspy', function () {
+
+	        // do something…
+	    })
+	});
+</script>
 	
   </head>
 
-  <body>
+  <body data-spy="scroll" data-target="#navbar">
 	<div class="navbar navbar-default navbar-fixed-top">
       <div class="container">
       	<div class="row">
@@ -80,11 +81,11 @@
 		        	<div class="col-md-12 navbar-top">
 				        <div class="navbar-collapse collapse navbar-right navbar-right-wrap">
 				          <ul class="nav navbar-nav nav-top" id="menu">
-				            <li data-menuanchor="home" class="active"><a href="#home">Home</a></li>
-							<li data-menuanchor="about" ><a href="#about">About</a></li>
-							<li data-menuanchor="howToJoin" ><a href="#howToJoin">How to Join</a></li>
-							<li data-menuanchor="mechanics" ><a href="#mechanics">Mechanics</a></li>
-							<li data-menuanchor="sponsors" ><a href="#sponsors">Sponsors</a></li>
+				            <li class="active"><a href="#home">Home</a></li>
+							<li><a href="#about">About</a></li>
+							<li><a href="#howToJoin">How to Join</a></li>
+							<li><a href="#mechanics">Mechanics</a></li>
+							<li><a href="#sponsors">Sponsors</a></li>
 				          </ul>
 				        </div><!--/.nav-collapse -->
 				    </div>
@@ -94,8 +95,7 @@
       </div>
     </div>	
 	<div class="spacer"></div>
-	<div id="fullpage">
-	<div class="section" id="section0">
+	<div id="home">
 		<div class="banner-home">
 			<div class="container">
 				<div class="row">
@@ -123,7 +123,7 @@
 			</div>
 		</div>
 	</div><!-- /banner-home -->
-	<div class="section" id="section1">
+	<div id="about">
 		<div class="header-wrap">
 				<h1>About</h1>
 			</div>
@@ -154,7 +154,7 @@
 			</div>
 		</div>
 	</div><!-- /banner-home -->
-	<div class="section" id="section2">
+	<div id="howToJoin">
 		<div class="header-wrap">
 				<h1>How to Join</h1>
 			</div>
@@ -195,7 +195,7 @@
 			<hr>			
 		</div>
 	</div><!-- /banner-home -->
-	<div class="section" id="section3">
+	<div id="mechanics">
 		<div class="header-wrap">
 				<h1>Mechanics</h1>
 			</div>
@@ -252,21 +252,18 @@
 			<hr>
 		</div>
 	</div><!-- /banner-home -->
-	<div class="section" id="section3">
+	<div id="sponsors">
 		<div class="header-wrap">
 				<h1>Brought To You By</h1>
 			</div>
 		<div class="banner">
 			<div class="container">
 				<div class="row text-center">
-					<div class="col-md-4">
+					<div class="col-md-6">
 						<img src="img/spon-img1.png" class="img-responsive" /><hr>
 					</div>
-					<div class="col-md-4">
+					<div class="col-md-6">
 						<img src="img/spon-img2.png" class="img-responsive" /><hr>
-					</div>
-					<div class="col-md-4">
-						<img src="img/spon-img3.png" class="img-responsive" /><hr>			
 					</div>
 				</div>
 			</div>
@@ -291,10 +288,10 @@
 			</footer>
 		</div>
 	</div><!-- /banner-home -->
-	</div>
 	
 
     <!--<script src="bootstrap/js/jquery.js"></script>-->
+    <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-scrollspy.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
 	<script src="bootstrap/js/respond.min.js"></script>
 	<script src="bootstrap/js/css3-mediaqueries.js"></script>
