@@ -45,6 +45,7 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>	
 	
+	
 	<script type="text/javascript">
     $('[data-spy="scroll"]').each(function () {
 		  var $spy = $(this).scrollspy('refresh')
@@ -52,7 +53,7 @@
   </script>
   <script type="text/javascript">
 	$(document).ready(function(){
-	    $("#myNavbar").on('activate.bs.scrollspy', function () {
+	    $("#Mynavbar").on('activate.bs.scrollspy', function () {
 
 	        // do something…
 	    })
@@ -61,8 +62,8 @@
 	
   </head>
 
-  <body data-spy="scroll" data-target="#navbar">
-	<div class="navbar navbar-default navbar-fixed-top">
+  <body data-spy="scroll" data-target="#Mynavbar">
+	<div class="navbar navbar-default navbar-fixed-top" id="Mynavbar">
       <div class="container">
       	<div class="row">
 		    <div class="col-md-3 col-sm-2">
@@ -168,7 +169,7 @@
 						<hr>
 						<h5>Registration</h5>
 						<ul class="text-left">
-							<li>Open the registration form here (Google Form).</li>
+							<li>Open the registration form here <a href="https://docs.google.com/a/devcon.ph/forms/d/132R_Cc61YuLws3DmbPELmEgRNPkIY_wrVGk4Fu8FXNs/viewform">(Google Form)</a>.</li>
 							<li>Fill-in team details. Up to 5 team members in a team.</li>
 							<li>Fill-in project details.</li>
 							<li>Submit form.</li>
@@ -255,14 +256,17 @@
 			</div>
 			<hr>
 		</div>
+		<div class="spacer"></div>
 	</div><!-- /banner-home -->
 	<div id="sponsors">
+		<div class="spacer"></div>
 		<div class="header-wrap">
 				<h1>Brought To You By</h1>
 			</div>
 		<div class="banner">
 			<div class="container">
 				<div class="row text-center">
+					<hr><hr><hr>
 					<div class="col-md-6">
 						<img src="img/spon-img1.png" class="img-responsive" /><hr>
 					</div>
@@ -272,27 +276,26 @@
 				</div>
 			</div>
 			<hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr>
-			<footer>
-				<div class="footer-wrap">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-12 text-center">
-								<p>DevCon Devise 2014</p>
-								<ul>
-									<li class="active"><a href="index.html">Home</a> | </li>
-									<li><a href="about.html">About</a> | </li>
-									<li><a href="how-to-join.html">How to Join</a> | </li>
-									<li><a href="mechanics.html">Mechanics</a> | </li>
-									<li><a href="sponsors.html">Sponsors</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div><!-- /footer-wrap -->	
-			</footer>
 		</div>
 	</div><!-- /banner-home -->
-	
+	<footer>
+		<div class="footer-wrap">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<p>DevCon Devise 2014</p>
+						<ul>
+							<li><a href="#home">Home</a> | </li>
+							<li><a href="#about">About</a> | </li>
+							<li><a href="#howToJoin">How to Join</a> | </li>
+							<li><a href="#mechanics">Mechanics</a> | </li>
+							<li><a href="#sponsors">Sponsors</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div><!-- /footer-wrap -->	
+	</footer>
 
     <!--<script src="bootstrap/js/jquery.js"></script>-->
     <script src="http://twitter.github.com/bootstrap/assets/js/bootstrap-scrollspy.js"></script>
