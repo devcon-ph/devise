@@ -23,10 +23,15 @@ hr{border-color:transparent; margin:15px 0;}
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle {background: #2C2E2F}
 .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover{background: #00AECB;}
 
-#home, #about, #howToJoin, #mechanics, #sponsors{height: 800px;}
+#home, #about, #howToJoin, #sponsors{height: 500px;}
+#mechanics{height:780px;}
+#faq{height:900px;}
 
 /*----------------------------------containerH----------------------*/
 .spacer{height:80px;}
+@media (max-width:767px){
+  .spacer{height:0px;}
+}
 .banner-home{background:-moz-linear-gradient(left, #51bf00 0%, #51bf00 48%, #ffffff 48%, #ffffff 100%); 
 background: -webkit-gradient(linear, left top, right top, color-stop(0%,#51bf00), color-stop(48%,#51bf00), color-stop(48%,#ffffff), color-stop(100%,#ffffff)); /* Chrome,Safari4+ */
 background: -webkit-linear-gradient(left, #51bf00 0%,#51bf00 48%,#ffffff 51%,#ffffff 100%); /* Chrome10+,Safari5.1+ */
@@ -53,10 +58,13 @@ color: #ffffff; padding: 10px 20px; border-radius:10px; -moz-border-radius:10px;
 p.pwrap span{font-size: 13px;}
 /*----------------------------------mech----------------------*/
 .mech-wrap p{font-size: 12px;}
-.mech-wrap .mech-p p{text-align: center;}
+.mech-wrap .mech-p p{text-align: center; font-size: 120%; font-weight: bold}
 table.mech-tab tr td{text-align: left; font-size: 12px; border: 1px solid #cccccc; padding: 5px;}
 .mech-wrap{background:#ffffff; padding:80px 0px 10px 0px;}
+/*----------------------------------faq----------------------*/
+p.question{font-size: 120%; font-weight:bold;}
 /*----------------------------------footer----------------------*/
+.facebook-like{padding:200px 0 20px;}
 footer{position: relative; bottom: 0px; }
 .footer-wrap p, .footer-wrap a{color: #ffffff; font-size: 14px; font-weight: 300; text-align: center;}
 .footer-wrap{padding: 20px 0; background:#2C2E2F;}
